@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 export default async function connectDB() {
-  const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/weatherFinalDB";
+  const uri = "mongodb+srv://geetsahu1852005_db_user:AxFAOU2z1E8lxM2n@cluster1.zuzlzqv.mongodb.net/?appName=Cluster1";
   try {
     await mongoose.connect(uri);
     console.log("✅ MongoDB connected");
